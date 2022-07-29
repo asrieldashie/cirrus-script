@@ -1,10 +1,10 @@
 # Normal build steps
 . build/envsetup.sh
-lunch rom_lavender-userdebug
+lunch fluid_guacamoleb-userdebug
 
 # export variable here
 export TZ=Asia/Kolkata
 
 compile_plox () {
-make bacon -j$(nproc --all)
+mka bacon -j$(nproc --all)
 }
