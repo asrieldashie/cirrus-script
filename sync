@@ -23,6 +23,7 @@ repo init --depth=1 --no-repo-verify -u https://github.com/Project-Fluid/manifes
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 
 # local manifest
+rm -rf prebuilts/gcc/linux-x86/aarch64 
 git clone --depth=1 https://github.com/rubik-hub/android_device_oneplus_guacamoleb.git -b fluid-12.1 device/oneplus/guacamoleb
 git clone --depth=1 https://github.com/rubik-hub/android_device_oneplus_sm8150-common.git -b fluid-12.1 device/oneplus/sm8150-common
 git clone --depth=1 https://github.com/PixelOS-Devices/kernel_oneplus_sm8150.git -b kernel/oneplus/sm8150
