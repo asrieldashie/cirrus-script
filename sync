@@ -24,11 +24,11 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # local manifest
 rm -rf prebuilts/gcc/linux-x86/aarch64 
-git clone --depth=1 https://github.com/rubik-hub/android_device_oneplus_guacamoleb.git -b fluid-12.1 device/oneplus/guacamoleb
-git clone --depth=1 https://github.com/rubik-hub/android_device_oneplus_sm8150-common.git -b fluid-12.1 device/oneplus/sm8150-common
-git clone --depth=1 https://github.com/PixelOS-Devices/kernel_oneplus_sm8150.git kernel/oneplus/sm8150
-git clone --depth=1 https://gitlab.com/rubik-hub/android_vendor_oneplus.git vendor/oneplus
-git clone --depth=1 https://github.com/rubik-hub/android_hardware_oneplus hardware/oneplus
+git clone --depth=1 https://github.com/xLexip/android_device_oneplus_dumpling.git -b pe/twelve device/oneplus/dumpling
+git clone --depth=1 https://github.com/xLexip/android_device_oneplus_msm8998-common.git -b pe/twelve device/oneplus/msm8998-common
+git clone --depth=1 https://github.com/xLexip/android_kernel_oneplus_msm8998.git kernel/oneplus/msm8998
+git clone --depth=1 https://github.com/xLexip/android_vendor_oneplus.git vendor/oneplus
+git clone --depth=1 https://github.com/xLexip/android_hardware_oneplus hardware/oneplus
 git clone --depth=1 https://github.com/cyberknight777/gcc-arm64.git prebuilts/gcc/linux-x86/aarch64 
 
 tg "$rom_name source sync completed!
